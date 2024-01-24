@@ -9,7 +9,7 @@ import { User } from './userModels';
 import jwt from 'jsonwebtoken'
 const app = express()
 const server = http.createServer(app)
-const { PORT } = process.env || 4000
+const PORT  = process.env.PORT || 4000
 
 app.use(cors())
 app.use(express.json())
